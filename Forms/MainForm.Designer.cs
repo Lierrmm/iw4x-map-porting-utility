@@ -548,7 +548,7 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "IW4x Map Porting Utility";
+            this.Text = "IW4x Map Porting Utility - COD4 1.8";
             zonebuilderGroupBox.ResumeLayout(false);
             zonebuilderGroupBox.PerformLayout();
             outputBoxGroup.ResumeLayout(false);
