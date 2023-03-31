@@ -481,7 +481,7 @@
                             correctSModelsMethod,
                             (txt) => outputTextBox.Invoke(updateTextBox, this, txt)); ;
 
-                        outputTextBox.Invoke(updateTextBox, this, $"IW3xport program terminated with output {exitCode}");
+                        outputTextBox.Invoke(updateTextBox, this, $"IW3xport program terminated with output 0x{exitCode:X2}");
 
                         if (exitCode == 0) {
                             // All good!
