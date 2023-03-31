@@ -2,7 +2,7 @@
 
 This is a modification to the [original](https://github.com/XLabsProject/iw4x-map-porting-utility) to support COD4 1.8 instead of 1.7.
 
-If you use COD4 1.8, use the original.
+If you use COD4 1.7, use the original instead.
 
 # ![iw4-mpu](Resources/cardicon_porterjustice.png) IW4x Map Porting Utility
 
