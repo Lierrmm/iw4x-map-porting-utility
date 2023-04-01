@@ -122,12 +122,17 @@
                         }
                     }
 
-                    var soundFiles = Directory.GetFiles(Path.Combine(dataPath, "sound"), "*.*", SearchOption.AllDirectories);
-                    foreach (var file in soundFiles) {
-                        string entry = file.Substring(dataPath.Length+1);
-                        pipe.Invoke($"Adding {entry}");
-                        zipFile.CreateEntryFromFile(file, entry);
+                    if (Directory.Exists(Path.Combine(dataPath, "sound")))
+                    {
+                        var soundFiles = Directory.GetFiles(Path.Combine(dataPath, "sound"), "*.*", SearchOption.AllDirectories);
+                        foreach (var file in soundFiles)
+                        {
+                            string entry = file.Substring(dataPath.Length + 1);
+                            pipe.Invoke($"Adding {entry}");
+                            zipFile.CreateEntryFromFile(file, entry);
+                        }
                     }
+                    else pipe.Invoke("Skipping sounds as none found in .iwd");
                 }
             }
             
